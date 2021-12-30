@@ -3,8 +3,10 @@ import "../components/Header.css";
 
 function Header() {
   return (
-    <div>
-      <h2 className="header">Im the header</h2>
+    <div className="header">
+      <div className="logoContainer">
+        <img src={punkLogo} className="punkLogo" alt="Logo" />
+      </div>
     </div>
   );
 }
