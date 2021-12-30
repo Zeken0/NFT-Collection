@@ -29,9 +29,11 @@ function Header() {
 
       <div className="headerActions">
         <div className="themeSwitchContainer">
-          <img src={themeSwitchIcon} alt="" />
+          <img src={themeSwitchIcon} alt="Theme switch icon" />
         </div>
       </div>
+
+      <div className="loginButton">GET IN</div>
     </div>
   );
 }

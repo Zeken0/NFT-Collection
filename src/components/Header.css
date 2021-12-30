@@ -11,7 +11,7 @@
 }
 
 .punkLogo {
-  width: 120px;
+  width: 200px;
 }
 
 .searchBar {
@@ -40,4 +40,31 @@
   display: flex;
   column-gap: 10px;
   color: #a1a5b0;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.themeSwitchContainer {
+  display: flex;
+  background-color: #1c1c1e;
+  border-radius: 50px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.themeSwitchContainer > img {
+  height: 25px;
+}
+
+.loginButton {
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: #000;
 }
