@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/Header.css";
+import punkLogo from "../assets/header/cryptopunk-logo.png";
 
 function Header() {
   return (
