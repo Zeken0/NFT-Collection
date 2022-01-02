@@ -1,6 +1,6 @@
 import React from "react";
 import CollectionCard from "./CollectionCard";
-import "./PunkList.css";
+import "./css/PunkList.css";
 
 const PunkList = ({ punkListData }) => {
   return (

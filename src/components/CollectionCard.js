@@ -1,6 +1,6 @@
 import React from "react";
 import weth from "../assets/weth.png";
-import "./CollectionCard.css";
+import "./css/CollectionCard.css";
 
 const CollectionCard = ({ id, name, traits, image }) => {
   return (
@@ -8,7 +8,7 @@ const CollectionCard = ({ id, name, traits, image }) => {
       <img src={image} alt="image of the nft" />
       <div className="details">
         <div className="name">{name}</div>
-        <div className="id">*#{id}</div>
+        <div className="id">#{id}</div>
         <div className="priceContainer">
           <img
             src={weth}
