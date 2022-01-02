@@ -1,7 +1,8 @@
 import React from "react";
 import CollectionCard from "./CollectionCard";
+import "./PunkList.css";
 
-const PunkList = (punkListData) => {
+const PunkList = ({ punkListData }) => {
   return (
     <div className="punkList">
       {punkListData.map((punk) => (
