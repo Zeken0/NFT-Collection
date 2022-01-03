@@ -1,5 +1,6 @@
 .main {
-  max-height: 50vh;
+  border: solid 1px blue;
+  max-height: 100vh;
   margin-top: 0.5rem;
 }
 
@@ -30,26 +31,26 @@
 }
 
 .punkDetails {
+  border: solid red 1px;
   color: #fff;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   flex: 0.75;
 }
 
 .title {
-  font-size: 96px;
+  font-size: 60px;
   font-weight: 800;
 }
 
 .itemNumber {
   color: #a1a5b0;
-  font-size: 72px;
+  font-size: 45px;
   align-self: center;
 }
 
 .owner {
   display: flex;
+  flex-direction: column;
   margin: 10px 0;
   height: 50px;
 }

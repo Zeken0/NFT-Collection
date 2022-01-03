@@ -38,6 +38,7 @@ const Main = ({ selectedPunk, punkListData }) => {
               <div className="ownerName">{activePunk.owner.address}</div>
               <div className="ownerHandle">@Ahmed J. Jibril</div>
             </div>
+
             <div className="ownerLink">
               <img src={instagramLogo} alt="" />
             </div>
