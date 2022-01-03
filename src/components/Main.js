@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import instagramLogo from "../assets/owner/instagram.png";
 import twitterLogo from "../assets/owner/twitter.png";
 import moreIcon from "../assets/owner/more.png";
 import "./css/Main.css";
 
-const Main = () => {
+const Main = ({ selectedPunk, punkListData }) => {
+  const [activePunk, setActivePunk] = useState(punkListData[0]);
+
+  useEffect(() => {
+    setActivePunk(punkListData[selectedPunk]);
+  }, [punkListData, selectedPunk]);
+
   return (
     <div className="main">
       <div className="mainContent">
@@ -12,32 +18,25 @@ const Main = () => {
           <div className="punkContainer">
             <img
               className="selectedPunk"
-              src={
-                "https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
-              }
+              src={activePunk.image_orginal_url}
               alt="image of the highlighted nft"
             />
           </div>
         </div>
 
         <div className="punkDetails">
-          <div className="title">Bandana Punk</div>
-          <span className="itemNumber">#3</span>
+          <div className="title">{activePunk.name}</div>
+          <span className="itemNumber">#{activePunk.token_id}</span>
         </div>
 
         <div className="owner">
           <div className="ownerImageContainer">
-            <img
-              src={
-                "https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
-              }
-              alt=""
-            />
+            <img src={activePunk.owner.profile_image_url} alt="" />
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
-              <div>0x7a0875DdC765216D5FcE81AfC478c120A215F3C2</div>
-              <div className="ownerHandle">@AJ</div>
+              <div className="ownerName">{activePunk.owner.address}</div>
+              <div className="ownerHandle">@Ahmed J. Jibril</div>
             </div>
             <div className="ownerLink">
               <img src={instagramLogo} alt="" />
