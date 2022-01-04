@@ -8,7 +8,7 @@ import axios from "axios";
 
 function App() {
   const [punkListData, setPunkListData] = useState([]);
-  const [selectedPunk, setSelectedPunk] = useState([3]);
+  const [selectedPunk, setSelectedPunk] = useState([2]);
 
   useEffect(() => {
     const getMyNfts = async () => {

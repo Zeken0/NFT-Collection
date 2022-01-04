@@ -6,7 +6,7 @@ import "./css/Main.css";
 
 const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
-
+  console.log(activePunk);
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk]);
   }, [punkListData, selectedPunk]);
@@ -18,35 +18,38 @@ const Main = ({ selectedPunk, punkListData }) => {
           <div className="punkContainer">
             <img
               className="selectedPunk"
-              src={activePunk.image_orginal_url}
+              src={activePunk.image_original_url}
               alt="image of the highlighted nft"
             />
           </div>
         </div>
 
-        <div className="punkDetails">
-          <div className="title">{activePunk.name}</div>
-          <span className="itemNumber">#{activePunk.token_id}</span>
-        </div>
-
-        <div className="owner">
-          <div className="ownerImageContainer">
-            <img src={activePunk.owner.profile_image_url} alt="" />
+        <div className="allDetails">
+          <div className="punkDetails">
+            <div className="title">{activePunk.name}</div>
+            <span className="itemNumber">#{activePunk.token_id}</span>
           </div>
-          <div className="ownerDetails">
-            <div className="ownerNameAndHandle">
-              <div className="ownerName">{activePunk.owner.address}</div>
-              <div className="ownerHandle">@Ahmed J. Jibril</div>
-            </div>
 
-            <div className="ownerLink">
-              <img src={instagramLogo} alt="" />
+          <div className="owner">
+            <div className="ownerImageContainer">
+              <img src={activePunk.owner.profile_img_url} alt="" />
             </div>
-            <div className="ownerLink">
-              <img src={twitterLogo} alt="" />
+            <div className="ownerDetails">
+              <div className="ownerNameAndHandle">
+                <div className="ownerName">{activePunk.owner.address}</div>
+                <div className="ownerHandle">@Ahmed J. Jibril</div>
+              </div>
             </div>
-            <div className="ownerLink">
-              <img src={moreIcon} alt="" />
+            <div className="ownerGroupLinks">
+              <div className="ownerLink">
+                <img src={instagramLogo} alt="" />
+              </div>
+              <div className="ownerLink">
+                <img src={twitterLogo} alt="" />
+              </div>
+              <div className="ownerLink">
+                <img src={moreIcon} alt="" />
+              </div>
             </div>
           </div>
         </div>
