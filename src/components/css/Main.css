@@ -50,6 +50,7 @@
 }
 
 .itemNumber {
+  margin-top: 0.5rem;
   color: #a1a5b0;
   font-size: 45px;
   align-self: center;
@@ -84,7 +85,7 @@
 }
 
 .ownerName {
-  color: #fff;
+  color: rgba(245, 245, 245, 0.918);
 }
 
 .ownerHandle {
