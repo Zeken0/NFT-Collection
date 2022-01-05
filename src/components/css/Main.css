@@ -32,17 +32,14 @@
 
 .selectedPunk {
   object-fit: contain;
-  max-width: min(40vw, 40vh);
-  max-height: 30vw;
+  max-width: min(40vw, 50vh);
+  max-height: 40vw;
 }
 
 .punkDetails {
-  border: solid blue 1px;
   color: #fff;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  column-gap: 1rem;
 }
 
 .title {
