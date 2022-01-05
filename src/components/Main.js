@@ -6,7 +6,7 @@ import "./css/Main.css";
 
 const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
-  console.log(activePunk);
+
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk]);
   }, [punkListData, selectedPunk]);
@@ -32,7 +32,10 @@ const Main = ({ selectedPunk, punkListData }) => {
 
           <div className="owner">
             <div className="ownerImageContainer">
-              <img src={activePunk.owner.profile_img_url} alt="" />
+              <img
+                src={activePunk.owner.profile_img_url}
+                alt="image of the owner"
+              />
             </div>
             <div className="ownerDetails">
               <div className="ownerNameAndHandle">
@@ -42,13 +45,13 @@ const Main = ({ selectedPunk, punkListData }) => {
             </div>
             <div className="ownerGroupLinks">
               <div className="ownerLink">
-                <img src={instagramLogo} alt="" />
+                <img src={instagramLogo} alt=" Instagrams logo" />
               </div>
               <div className="ownerLink">
-                <img src={twitterLogo} alt="" />
+                <img src={twitterLogo} alt=" Titters logo" />
               </div>
               <div className="ownerLink">
-                <img src={moreIcon} alt="" />
+                <img src={moreIcon} alt=" image of three dots" />
               </div>
             </div>
           </div>

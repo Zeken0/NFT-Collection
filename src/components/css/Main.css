@@ -40,20 +40,19 @@
   border: solid blue 1px;
   color: #fff;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   column-gap: 1rem;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 75px;
   font-weight: 800;
 }
 
 .itemNumber {
-  margin-top: 0.5rem;
   color: #a1a5b0;
   font-size: 45px;
-  align-self: center;
 }
 
 .owner {
@@ -85,7 +84,7 @@
 }
 
 .ownerName {
-  color: rgba(245, 245, 245, 0.918);
+  color: rgba(245, 245, 245, 0.877);
 }
 
 .ownerHandle {
