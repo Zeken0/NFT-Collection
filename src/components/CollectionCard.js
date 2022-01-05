@@ -1,4 +1,3 @@
-import React from "react";
 import weth from "../assets/weth.png";
 import "./css/CollectionCard.css";
 
