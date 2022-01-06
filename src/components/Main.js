@@ -31,27 +31,31 @@ const Main = ({ selectedPunk, punkListData }) => {
           </div>
 
           <div className="owner">
-            <div className="ownerImageContainer">
-              <img
-                src={activePunk.owner.profile_img_url}
-                alt="image of the owner"
-              />
-            </div>
-            <div className="ownerDetails">
-              <div className="ownerNameAndHandle">
-                <div className="ownerName">{activePunk.owner.address}</div>
-                <div className="ownerHandle">@Ahmed J. Jibril</div>
+            <div className="ownerLeftSideContent">
+              <div className="ownerImageContainer">
+                <img
+                  src={activePunk.owner.profile_img_url}
+                  alt="image of the owner"
+                />
+              </div>
+              <div className="ownerDetails">
+                <div className="ownerNameAndHandle">
+                  <div className="ownerName">{activePunk.owner.address}</div>
+                  <div className="ownerHandle">@Ahmed J. Jibril</div>
+                </div>
               </div>
             </div>
-            <div className="ownerGroupLinks">
-              <div className="ownerLink">
-                <img src={instagramLogo} alt=" Instagrams logo" />
-              </div>
-              <div className="ownerLink">
-                <img src={twitterLogo} alt=" Titters logo" />
-              </div>
-              <div className="ownerLink">
-                <img src={moreIcon} alt=" image of three dots" />
+            <div className="ownerRightSideContent">
+              <div className="ownerGroupLinks">
+                <div className="ownerLink">
+                  <img src={instagramLogo} alt=" Instagrams logo" />
+                </div>
+                <div className="ownerLink">
+                  <img src={twitterLogo} alt=" Titters logo" />
+                </div>
+                <div className="ownerLink">
+                  <img src={moreIcon} alt=" image of three dots" />
+                </div>
               </div>
             </div>
           </div>

@@ -68,3 +68,37 @@
   border-radius: 50px;
   color: #000;
 }
+
+@media (max-width: 991px) /*Tablet*/ {
+  .punkLogo {
+    width: 125px;
+  }
+
+  .searchBar {
+    height: 45px;
+  }
+
+  .searchInput {
+    font-size: 14px;
+  }
+
+  .searchIconContainer > img {
+    height: 20px;
+  }
+
+  .headerItems {
+    font-size: 14px;
+  }
+
+  .themeSwitchContainer {
+    padding: 10px;
+  }
+
+  .themeSwitchContainer > img {
+    height: 16px;
+  }
+
+  .loginButton {
+    padding: 11.5px 19px;
+  }
+}
