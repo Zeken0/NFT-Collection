@@ -10,7 +10,6 @@
 }
 
 .punkHighlight {
-  flex: 0.25;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +19,7 @@
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .allDetails {
@@ -37,6 +36,7 @@
 }
 
 .punkDetails {
+  border: solid red 1px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -121,6 +121,7 @@
   }
 
   .owner {
+    border: solid blue 1px;
     height: fit-content;
     flex-direction: column-reverse;
     row-gap: 1rem;
@@ -138,4 +139,22 @@
 }
 
 @media (max-width: 767px) /*Mobile*/ {
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .punkContainer {
+    margin-right: 0;
+  }
+
+  .selectedPunk {
+    object-fit: unset;
+    max-width: unset;
+    max-height: 50vh;
+  }
+
+  .ownerLeftSideContent {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
