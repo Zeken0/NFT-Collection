@@ -121,7 +121,7 @@
   }
 
   .owner {
-    border: solid blue 1.1px;
+    border: solid blue 1px;
     height: fit-content;
     flex-direction: column-reverse;
     row-gap: 1rem;
