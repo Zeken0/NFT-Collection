@@ -1,3 +1,4 @@
+import React from "react";
 import CollectionCard from "./CollectionCard";
 import "./css/PunkList.css";
 
