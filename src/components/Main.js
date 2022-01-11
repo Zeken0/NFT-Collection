@@ -19,7 +19,7 @@ const Main = ({ selectedPunk, punkListData }) => {
             <img
               className="selectedPunk"
               src={activePunk.image_original_url}
-              alt="image of the highlighted nft"
+              alt="of the highlighted nft"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ const Main = ({ selectedPunk, punkListData }) => {
               <div className="ownerImageContainer">
                 <img
                   src={activePunk.owner.profile_img_url}
-                  alt="image of the owner"
+                  alt="of the owner"
                 />
               </div>
               <div className="ownerDetails">
@@ -54,7 +54,7 @@ const Main = ({ selectedPunk, punkListData }) => {
                   <img src={twitterLogo} alt=" Titters logo" />
                 </div>
                 <div className="ownerLink">
-                  <img src={moreIcon} alt=" image of three dots" />
+                  <img src={moreIcon} alt="of three dots" />
                 </div>
               </div>
             </div>
