@@ -13,7 +13,7 @@ function App() {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
         "https://testnets-api.opensea.io/assets?asset_contract_address=0x7870d0e7Cac591dB68f0ebC14C984184c8eFd2aa&format=json&order_direction=asc",
-        { mode: "cors" }
+        { mode: "cors", credentials: "include" }
       );
       setPunkListData(openseaData.data.assets);
     };
