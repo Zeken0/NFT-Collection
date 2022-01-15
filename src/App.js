@@ -9,12 +9,19 @@ function App() {
   const [punkListData, setPunkListData] = useState([]);
   const [selectedPunk, setSelectedPunk] = useState([0]);
 
+  // const cors = require("cors");
+  // App.use(
+  //   cors({
+  //     origin: "*",
+  //   })
+  // );
+
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x7870d0e7Cac591dB68f0ebC14C984184c8eFd2aa&format=json&order_direction=asc",
-        { mode: "cors", credentials: "include" }
+        "https://testnets-api.opensea.io/assets?asset_contract_address=0x7870d0e7Cac591dB68f0ebC14C984184c8eFd2aa&format=json&order_direction=asc"
       );
+      console.log(openseaData);
       setPunkListData(openseaData.data.assets);
     };
     return getMyNfts();
