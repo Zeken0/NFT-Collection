@@ -5,15 +5,6 @@ import Main from "./components/Main";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-App.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // or specify your domain i.e. https://localhost.com
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
 function App() {
   const [punkListData, setPunkListData] = useState([]);
   const [selectedPunk, setSelectedPunk] = useState([0]);
