@@ -48,10 +48,10 @@ const Main = ({ selectedPunk, punkListData }) => {
             <div className="ownerRightSideContent">
               <div className="ownerGroupLinks">
                 <div className="ownerLink">
-                  <img src={instagramLogo} alt=" Instagrams logo" />
+                  <img src={instagramLogo} alt="of Instagrams logo" />
                 </div>
                 <div className="ownerLink">
-                  <img src={twitterLogo} alt=" Titters logo" />
+                  <img src={twitterLogo} alt="of Titters logo" />
                 </div>
                 <div className="ownerLink">
                   <img src={moreIcon} alt="of three dots" />
