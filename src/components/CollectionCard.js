@@ -4,7 +4,7 @@ import "./css/CollectionCard.css";
 
 const CollectionCard = ({ id, name, traits, image }) => {
   return (
-    <div className="collectionCard">
+    <div className="collectionCard" key={id}>
       <img src={image} alt="of the nft" />
       <div className="details">
         <div className="name">{name}</div>

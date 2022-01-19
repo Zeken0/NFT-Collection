@@ -36,7 +36,6 @@
 }
 
 .punkDetails {
-  border: solid red 1px;
   color: #fff;
   display: flex;
   flex-direction: column;
